@@ -1,10 +1,12 @@
 package lesson2.homeWork.part2;
 
+import java.util.ArrayList;
+
 public class Company {
     private String name;
-    private Department[] Departments;
+    private ArrayList<Department> Departments;
 
-    public Company(String name, Department[] departments) {
+    public Company(String name, ArrayList<Department> departments) {
         this.name = name;
         Departments = departments;
     }
@@ -17,13 +19,11 @@ public class Company {
         this.name = name;
     }
 
-    public Department[] getDepartments() {
+    public ArrayList<Department> getDepartments() {
         return Departments;
     }
 
-    public void setDepartments(Department[] departments) {
+    public void setDepartments(ArrayList<Department> departments) {
         Departments = departments;
     }
-
-
 }
